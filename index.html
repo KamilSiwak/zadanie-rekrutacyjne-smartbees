@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+    <head> 
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <link rel="stylesheet" href="styles/css/fontello.css" type="text/css"/>
+        <meta content="text/html" charset="utf-8" />
+        
+        <title>SOFTWARE HOUSE</title>
+        
+    </head> 
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+
+                    <div class="col-12 header">
+                        <h6><i class="icon-user"></i> 1. TWOJE DANE </h6>
+                    </div>
+
+                    <div class="col-12 my_button">
+                        <button type="button" class="btn btn-outline-danger w-100">Logowanie</button>
+                    </div> 
+                    
+                    <div class="col-12"> 
+                        <p>Masz już konto? Kliknij żeby się zalogować.</p>
+                    </div>
+
+                    <div class="col-12">
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address">
+                            <label class="custom-control-label" for="same-address">
+                                Stwórz nowe konto
+                            </label>                            
+                        </div>
+                    </div>   
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="E-mail*">        
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <input type="password" class="form-control" placeholder="Hasło*">        
+                   </div>
+                   <br>
+                    <div class="col-12">
+                        <input type="password" class="form-control" placeholder="Potwierdź Hasło*">        
+                    </div>
+                    <br>
+                    <div class="col-12">
+                         <input type="text" class="form-control" placeholder="Imie*">        
+                    </div>
+                    <br>
+                    <div class="col-12">
+                         <input type="text" class="form-control" placeholder="Nazwisko*">        
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <select type="text" class="form-control" placeholder="Adres*">
+                            <option value="1" selected>Polska</option>
+                        </select>        
+                    </div>
+                    <br>
+                    <div class="row">
+    
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Kod pocztowy*">   
+                        </div>
+    
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Miasto*">   
+                        </div>          
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Telefon*">        
+                    </div>
+                    <br>
+                    <div class="col-12">
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address_1">
+                            <label class="custom-control-label" for="same-address_1">
+                                Dostawa pod inny adress
+                            </label>                            
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-4">
+                    <div class="col-12 header">
+                        <h6><i class="icon-truck"></i> 2. METODA DOSTAWY </h6>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="custom-control custom-radio">
+                                <input id="inpost" name="paymentMethod" type="radio" class="custom-control-input">
+                                <label class="custom-control-label" for="inpost">
+                                    <img src="pictures/inpost.png" width="40" height="20"> Paczkomaty 24/7
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4"> <b>10,99 zł</b> </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="custom-control custom-radio" >
+                                <input id="dpd_1" name="paymentMethod" type="radio" class="custom-control-input">
+                                <label class="custom-control-label" for="dpd_1">
+                                    <img src="pictures/dpd_logo.png" width="40" height="20"> Kurier DPD
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4"> <b>18,00 zł</b> </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="custom-control custom-radio">
+                                <input id="dpd_2" name="paymentMethod" type="radio" class="custom-control-input">
+                                <label class="custom-control-label" for="dpd_2">
+                                    <img src="pictures/dpd_logo.png" width="40" height="20"> Kurier DPD pobranie
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4"> <b>22,09 zł</b> </div>
+                    </div>
+                    <br>
+                    <div class="col-12 header">
+                        <h6><i class="icon-credit-card"></i> 3. METODA PŁATNOŚCI </h6>
+                    </div>
+
+                        <div class="col-12" id="remove_1">   
+                            <div class="custom-control custom-radio">
+                                <input id="payu" name="paymentMethod" type="radio" class="custom-control-input">
+                                <label class="custom-control-label" for="payu">
+                                    <img src="pictures/payu.png" width="40" height="20"> PayU
+                                </label>
+                            </div>
+                        <br>    
+                        </div>
+
+                        <div class="col-12" id="remove_2">  
+                            <div class="custom-control custom-radio">
+                                <input id="cash_on_delivery" name="paymentMethod" type="radio" class="custom-control-input">
+                                <label class="custom-control-label" for="cash_on_delivery">
+                                    <img src="pictures/cash.png" width="40" height="20"> Płatność przy odbiorze
+                                </label>
+                            </div>
+                        <br>
+                        </div>
+
+                        <div class="col-12" id="remove_3">
+                            <div class="custom-control custom-radio">
+                                <input id="bank_transfer" name="paymentMethod" type="radio" class="custom-control-input">
+                                <label class="custom-control-label" for="bank_transfer">
+                                    <img src="pictures/bank.png" width="40" height="20"> Przelew bankowy - zwykły
+                                </label>                                
+                            </div>
+                        <br>
+                        </div>
+                    
+                    <div class="col-12 my_button">
+                        <button type="button" class="btn btn-outline-secondary w-100">Dodaj kod rabatowy</button>
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Kod kuponu rabatowego">        
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-6"><button type="button" class="btn btn-secondary w-100">Zastosuj</button></div>
+                        <div class="col-6"><button type="button" class="btn btn-secondary w-100">Anuluj</button></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="col-12 header">
+                        <h6><i class="icon-doc-text"></i> 4. PODSUMOWANIE </h6>
+                    </div>
+
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Komentarz">        
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address_3">
+                            <label class="custom-control-label" for="same-address_3">
+                                Zapisz się aby otrzymać newsletter
+                            </label>                            
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12">   
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address_4">
+                            <label class="custom-control-label" for="same-address_4">
+                                Zapoznałam/em się z <a href="url">Regulaminem</a> zakupów
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col-12 my_button">
+                        <button type="button" class="btn btn-danger btn-lg w-100 h-30">POTWIERDŹ ZAKUP</button>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $("#inpost").click(function(){
+            $("#remove_1").hide();
+            $("#remove_2").show();
+            $("#remove_3").show();
+        })
+
+        $("#dpd_1").click(function(){
+            $("#remove_1").show();
+            $("#remove_2").hide();
+            $("#remove_3").show();
+        })
+
+        $("#dpd_2").click(function(){
+            $("#remove_1").hide();
+            $("#remove_2").show();
+            $("#remove_3").hide();
+        })
+    </script>
+
+</html>

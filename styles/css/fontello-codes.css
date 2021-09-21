@@ -1,0 +1,5 @@
+
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-credit-card:before { content: '\e801'; } /* '' */
+.icon-truck:before { content: '\e802'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
